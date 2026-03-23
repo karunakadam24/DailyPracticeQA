@@ -23,7 +23,7 @@ public class palindrome {
 }
 
 
-Q2.
+Q2.Prime Number
 package com.practice;
 
 public class PrimeNo {
