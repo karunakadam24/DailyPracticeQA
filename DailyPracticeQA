@@ -1,0 +1,72 @@
+Q.Palindrome
+package com.practice;
+// palindrome Program
+
+public class palindrome {
+	public static void main(String[] args) {
+		int num = 232;
+		int original = num;
+		int reverse = 0;
+		while (num != 0) {
+			int digit = num % 10;
+			reverse = reverse * 10 + digit;
+			num = num / 10;
+
+		}
+		if (original == reverse) {
+			System.out.println("Palindrome No ");
+		}else {
+			System.out.println("Not Palindrome No");
+		}
+	}
+
+}
+
+
+Q2.
+package com.practice;
+
+public class PrimeNo {
+	public static void main(String[] args) {
+//		int num = 6;
+//		int i=2;
+//		boolean isPrime=true;
+//		
+//		while(i<=num/2){
+//			if( num%i==0 ) {
+//				isPrime= false;
+//				break;
+//				
+//
+//			}
+//			i++;
+//			
+//		}
+//		if(num<=1) {
+//			System.out.println("Not Prime No");
+//		}else if (isPrime) {
+//			System.out.println("Prime No");
+//		}else {
+//			System.out.println("Not a Prime No");
+//		}
+Print 1 to 50 Prime no
+		int num = 2;
+		while (num <= 50) {
+			int i = 2;
+			boolean isPrime = true;
+			while (i <= num / 2) {
+				if (num % i == 0) {
+					isPrime = false;
+					break;
+
+				}
+				i++;
+			}
+			if (isPrime) {
+				System.out.println(num + " ");
+			}
+			num++;
+		}
+	}
+
+}
